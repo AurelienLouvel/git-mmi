@@ -87,7 +87,7 @@ footer {
 
 section:nth-child(2) {
   height: 50%;
-  background-image: url("assets/nasa-image.jpg");
+  background-image: url("assets/nasa-image-small.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -104,6 +104,7 @@ section:nth-child(2) {
   section:nth-child(2) {
     width: 60%;
     height: 100%;
+    background-image: url("assets/nasa-image-large.jpg");
   }
 
   h1 {
