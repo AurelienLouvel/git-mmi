@@ -8,19 +8,23 @@ body {
   height: 100vh;
   width: 100%;
   display: flex;
+  flex-direction: column;
   margin: 0;
   font-family: "Spartan", sans-serif;
 }
 
 header {
-  font-size: 1rem;
+  font-size: 0, 875rem;
   font-weight: 900;
 }
 
+section {
+  width: 100%;
+}
+
 section:nth-child(1) {
-  padding: 2rem;
-  height: 100%;
-  width: 40%;
+  padding: 1.5rem;
+  height: 50%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -37,12 +41,12 @@ section:nth-child(1) {
 
 .bar {
   height: 6.5rem;
-  width: 1rem;
+  width: 0.5rem;
   background-color: white;
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 1.5rem;
   font-weight: 900;
 }
 
@@ -82,8 +86,27 @@ footer {
 }
 
 section:nth-child(2) {
+  height: 50%;
   background-image: url("assets/nasa-image.jpg");
   background-size: cover;
   background-position: center;
-  width: 60%;
+}
+
+@media screen and (min-width: 800px) {
+  body {
+    flex-direction: row;
+  }
+  section:nth-child(1) {
+    padding: 2rem;
+    width: 40%;
+    height: 100%;
+  }
+  section:nth-child(2) {
+    width: 60%;
+    height: 100%;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
 }
